@@ -6,23 +6,21 @@ namespace Challenges
 
     public class ArrayChallenges
     {
-      
-        public static void EsreverYarra(string[] args)
+        //function returns array of int
+        public static int[] EsreverYarra(int[] arr)
         {
-            {
-                int[] arr = new int[] { 1, 2, 3, 4, 5 };
-                int length = arr.Length - 1;
-                string strReverse = null;
-                while (length >= 0)
-                {
-                    strReverse = strReverse + arr[length];
-                    length--;
-                }
-                Console.WriteLine();
-                Console.WriteLine("Reverse Array is " + " " + strReverse);
-                Console.ReadLine();
+            //creates new array index equal to original 
+            int[] mirrorArray = new int[arr.Length];
 
+            //loops through arr
+            for (int i = 0; i < arr.Length; i++)
+            {
+                //reverses array in mirrorArray
+                mirrorArray[i] = arr[arr.Length - (1+i)];
             }
+            //retuns 
+            return mirrorArray;         
+            
         }
     }
 }
