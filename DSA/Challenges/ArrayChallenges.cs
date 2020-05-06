@@ -3,7 +3,6 @@
 namespace Challenges
 {
 
-
     public class ArrayChallenges
     {
         //function returns array of int
@@ -16,11 +15,39 @@ namespace Challenges
             for (int i = 0; i < arr.Length; i++)
             {
                 //reverses array in mirrorArray
-                mirrorArray[i] = arr[arr.Length - (1+i)];
+                mirrorArray[i] = arr[arr.Length - (1 + i)];
             }
             //retuns 
-            return mirrorArray;         
-            
+            return mirrorArray;
+
         }
+
+
+        public static int[] shiftedArr(int[] arr, int numInput)
+        {
+            //determin length to find middle index
+            int[] shifty = new int[arr.Length + 1];
+            int mIndex = arr.Length / 2;
+
+            //loop for new array
+
+            for (int i = 0; i < shifty.Length; i++)
+            {
+                if (i < mIndex)
+                {
+                    shifty[i] = arr[i];
+                }
+                else if (i == mIndex)
+                {
+                    shifty[i] = numInput;
+                }
+                else if (i > mIndex)
+                {
+                    shifty[i] = arr[i - 1];
+                }
+            }
+            return shifty;
+        }
+
     }
 }
