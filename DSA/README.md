@@ -17,3 +17,8 @@ URL (/assets/img/blackboard.png);
 
 ## Solution
 URL (/assets/img/whiteboard.png); 
+
+## Challenge 3
+do a binary search in an arra
+
+##
