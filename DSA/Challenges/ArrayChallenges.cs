@@ -26,8 +26,11 @@ namespace Challenges
         public static int[] shiftedArr(int[] arr, int numInput)
         {
             //determin length to find middle index
-            int[] shifty = new int[arr.Length + 1];
-            int mIndex = arr.Length / 2;
+            
+           int mIndex = arr.Length / 2;
+           int[] shifty = new int[arr.Length + 1];
+            //decimal mIndex = (arr.Length +1  /2m);
+
 
             //loop for new array
 
@@ -48,6 +51,8 @@ namespace Challenges
             }
             return shifty;
         }
+
+
 
     }
 }
