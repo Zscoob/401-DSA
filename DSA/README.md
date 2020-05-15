@@ -7,7 +7,7 @@
   - created an array that would produce a new array which would take the length and reverse it as a string
 
 ### Solution
-URL (/assets/img/blackboard.png); 
+https://github.com/Zscoob/401-DSA/blob/master/DSA/assets/img/arrReverse.jpg
 
 ## Challenge 2, shiftArray
   - add a value into the middle of an arrow without a built in method
