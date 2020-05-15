@@ -26,9 +26,9 @@ namespace Challenges
         public static int[] shiftedArr(int[] arr, int numInput)
         {
             //determin length to find middle index
-            
-           int mIndex = arr.Length / 2;
-           int[] shifty = new int[arr.Length + 1];
+
+            int mIndex = arr.Length / 2;
+            int[] shifty = new int[arr.Length + 1];
             //decimal mIndex = (arr.Length +1  /2m);
 
 
@@ -53,6 +53,29 @@ namespace Challenges
         }
 
 
-
-    }
+        public static int BinSearch(int[] inputArr, int key)
+        {
+            int min = 0;
+            int max = inputArr.Length - 1;
+            while (min <= max)
+            {
+                int mid = (min + max) / 2;
+                if (key == inputArr[mid])
+                {
+                    return ++mid;
+                }
+                else if (key < inputArr[mid])
+                {
+                    max = mid - 1;
+                }
+                else
+                {
+                    min = mid + 1;
+                }
+            }
+            return -1;
+        }
+    }    
 }
+
+
