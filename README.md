@@ -33,3 +33,7 @@ https://github.com/Zscoob/401-DSA/blob/master/DSA/assets/img/shiftArr.jpg
 ### Solution
 https://github.com/Zscoob/401-DSA/blob/master/DSA/assets/img/binsearch.jpg
 
+### Insertion sort
+  - insertion sort in C#
+  - Takes in numbers from an array and catagorizes them from smallest to largest.
+  
